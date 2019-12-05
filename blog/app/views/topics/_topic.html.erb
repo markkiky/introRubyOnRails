@@ -1,0 +1,9 @@
+<%= stylesheet_link_tag "index" %>
+<tr id='row<%=topic.id %>'>
+        <td class= 'content'><%= topic.title %></td>
+        <td class= 'content'><%= topic.description %></td>
+        <td ><%= link_to 'Show', topic, :remote => true %></td>
+        <td ><%= link_to 'Edit', edit_topic_path(topic), :remote =>true %></td>
+        <td ><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } , :remote => true , :class => 'delete_topic'  %></td>
+</tr>
+                          

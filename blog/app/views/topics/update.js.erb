@@ -1,0 +1,6 @@
+$('#edit-topic form').remove()
+
+$('#edit-topic').append('Row Id is ' +$('#row') +'<%=@topic.id %>')
+id ='<%=@topic.id %>'
+
+$('table'+'#topic'+' tbody '+'tr#row'+id).html('<%= j render @topic%>') 

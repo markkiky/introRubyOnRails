@@ -1,0 +1,28 @@
+<%= stylesheet_link_tag "index" %>
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Topics</h1>
+
+<table id='topic'>
+  <thead>
+    <tr>
+      <th width= '40%'>Title</th>
+      <th width= '40%'>Description</th>
+      <th width= '20%' colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render partial: 'topic', collection: @topics %>
+  </tbody>
+</table>
+
+<br>
+
+<div id='new-topic'>
+  <%= link_to 'New Topic', new_topic_path, :remote =>true, :class =>'new_topic' %>
+</div>
+
+<div id='edit-topic'>
+
+</div>

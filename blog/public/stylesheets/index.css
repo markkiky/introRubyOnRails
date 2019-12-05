@@ -1,0 +1,23 @@
+h1{
+    color: brown;
+}
+table{
+    font-size: xx-large;
+    color: green;
+}
+table th{
+    color: cadetblue;
+}
+td{
+    font-size: x-large;
+}
+body{
+    background-image: url('../images/image2.jpg');
+}
+#new-topic a{
+    font-size:  medium;
+    color: green;
+}
+tr td .content{
+    width: 40%;
+}
